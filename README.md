@@ -49,6 +49,7 @@ openface detect images/0.jpg --output-dir ../results --device cpu
 2. The pip package hardcodes the author's Docker path (`/work/...`) and crashes on macOS with `[Errno 30] Read-only file system`. To fix this, use 'scripts/patch_openface.sh'. **after every venv rebuild**
 3. The CLI defaults to `--device cuda`. On Mac, always use `--device cpu`.
 4. The OpenFace-3.0 `demo.py` and `demo2.py` rely on empty directories, thus they are unusable.
+5. `detect-video` passes ndarray frames into a path-only API; use your own loop.
 
 ## Status Log:
 - 2026-10-17: Environment Setup + OpenFace working. Next: visualization script and feature extraction script.
