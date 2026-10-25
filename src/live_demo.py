@@ -1,4 +1,4 @@
-"""Live webcam overlay: emotion, gaze, top AUs. Run from project root:
+"""Live webcam overlay: emotion, gaze, top AUs; Run from project root:
    python src/live_demo.py        (press q to quit)"""
 import os, cv2, numpy as np, torch
 from pathlib import Path
